@@ -81,12 +81,11 @@ done
 ```
 MESSAGE=($(cat "$1"))
 length=$(echo "${MESSAGE[@]:1}" | wc -m)
-if [ "$(echo ${MESSAGE[0]} | grep -o '\[[0-9][0-9]-[a-z]*-[0-9][0-9]-[a-z]*\]')" == ' ' ]
+if [ "$(echo ${MESSAGE[0]} | grep -o '\[[0-9][0-9]-[a-z]*-[0-9][0-9]-[a-z]*\]')" == '' ]
   then
     echo "Нет кода текущего задания!!"
     exit 1
-fi
-if [ $length -gt 30 ]
+elif [ $length -gt 30 ]
   then
     echo "Количество символов больше 30"
     exit 1
