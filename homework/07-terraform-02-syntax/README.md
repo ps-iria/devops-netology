@@ -66,6 +66,7 @@ AWS предоставляет достаточно много бесплатн�
 
 <details>
   <summary markdown="span">terraform plan</summary>
+
 ```
 $ terraform plan
 
