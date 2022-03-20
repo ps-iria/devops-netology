@@ -64,10 +64,9 @@ AWS предоставляет достаточно много бесплатн�
        * Идентификатор подсети в которой создан инстанс.  
 7. Если вы выполнили первый пункт, то добейтесь того, что бы команда `terraform plan` выполнялась без ошибок. 
 
-
 <details>
   <summary markdown="span">terraform plan</summary>
-
+```
 $ terraform plan
 
 Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
@@ -161,7 +160,7 @@ pKYIF81UvJI+uYcHAM7HNQ4kM6CdpyYRTO1vWOLhAHCbzz6oFtD182PAkHpskGwXBZJEmwupeKEIYxqQ
     }
 
 Plan: 2 to add, 0 to change, 0 to destroy.
-
+```
 </details>
 
 В качестве результата задания предоставьте:
