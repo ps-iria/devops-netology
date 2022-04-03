@@ -1,0 +1,10 @@
+version: 3
+projects:
+- dir: terraform
+  workspace: staging
+  autoplan:
+    when_modified: ["../modules/**/*.tf", "*.tf*"]
+- dir: terraform
+  workspace: production
+  autoplan:
+    when_modified: ["../modules/**/*.tf", "*.tf*"]
